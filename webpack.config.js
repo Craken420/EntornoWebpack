@@ -18,6 +18,28 @@ module.exports = {
                   'css-loader'
                 ]
             },
+            {
+              test: /\.scss$/,
+              exclude: /node_modules/,
+              use: [
+                'style-loader',
+                'css-loader',
+                'sass-loader'
+              ]
+          },
+          {
+            test: /\.less$/,
+            exclude: /node_modules/,
+            use: [
+              'style-loader',
+              'css-loader',
+              'less-loader'
+            ]
+          },
+          {
+            test: /\.(png|woff|woff2|eot|ttf|svg)$/,
+            use: 'url-loader?limit=100000'
+          }
         ]
     },
     plugins: [

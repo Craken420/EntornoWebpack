@@ -1,0 +1,9 @@
+npm init -y
+npm i -D webpack
+npx webpack main.js bundle.js
+"build": "webpack"
+"build": "webpack --config webapck.config.js"
+npm i -D css-loader style-loader
+npm i -D sass-loader node-sass
+npm i -S bootstrap  // Por defecto bootstrap viene con less
+npm i -D url-loader file-loader less less-loader
